@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/field_spacing"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="@string/tv_name" />
+
+            <EditText
+                android:id="@+id/name_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/field_spacing"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="@string/tv_age" />
+
+            <EditText
+                android:id="@+id/age_field"
+                android:layout_width="match_parent"
+                android:layout_height="62dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/field_spacing"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="@string/tv_gender" />
+
+            <EditText
+                android:id="@+id/gender_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/field_spacing"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="@string/tv_sypmtoms" />
+
+            <EditText
+                android:id="@+id/symptoms_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/field_spacing"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="@string/tv_adivce" />
+
+            <EditText
+                android:id="@+id/advice_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/field_spacing"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="@string/tv_diagnosis" />
+
+            <EditText
+                android:id="@+id/diagnosis_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="@string/tv_prescription" />
+
+            <Button
+                android:id="@+id/add_prescription_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/prescriptions_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="Email"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/email"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/fab_margin"
+                android:text="Phone"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/phone"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
