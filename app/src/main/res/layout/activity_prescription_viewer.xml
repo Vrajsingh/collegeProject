@@ -22,27 +22,52 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/fab_margin"
-                android:id="@+id/tv_age"/>
+                android:id="@+id/tv_fcn"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/fab_margin"
-                android:id="@+id/tv_gender"/>
+                android:id="@+id/tv_perAdd"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/fab_margin"
-                android:id="@+id/tv_symptoms"/>
+                android:id="@+id/tv_preAdd"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/tv_advice"
+                android:id="@+id/tv_pin"
                 android:padding="@dimen/fab_margin"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/fab_margin"
-                android:id="@+id/tv_diagnosis"/>
+                android:id="@+id/tv_mob"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fab_margin"
+                android:id="@+id/tv_age"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fab_margin"
+                android:id="@+id/tv_religion"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fab_margin"
+                android:id="@+id/tv_varna"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fab_margin"
+                android:id="@+id/tv_qual"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/fab_margin"
+                android:id="@+id/tv_ritName"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

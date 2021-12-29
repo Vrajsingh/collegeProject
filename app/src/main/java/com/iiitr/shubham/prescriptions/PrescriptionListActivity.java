@@ -51,13 +51,17 @@ public class PrescriptionListActivity extends AppCompatActivity {
     private void expandItem(PrescriptionObject v) {
 
         Intent intent = new Intent(PrescriptionListActivity.this,PrescriptionViewerActivity.class);
-        intent.putExtra("name",v.getName());
-        intent.putExtra("age",v.getAge());
-        intent.putExtra("diagnosis",v.getDiagnosis());
-        intent.putExtra("advice",v.getAdvice());
-        intent.putExtra("symptoms",v.getSymptoms());
-        intent.putExtra("prescriptions",v.getPrescription());
-        intent.putExtra("gender",v.getGender());
+        intent.putExtra("Name",v.getName());
+        intent.putExtra("Family Code Number",v.getAge());
+        intent.putExtra("Permanent Address",v.getDiagnosis());
+        intent.putExtra("Present Address",v.getAdvice());
+        intent.putExtra("Pin code",v.getSymptoms());
+        intent.putExtra("Mobile No",v.getPrescription());
+        intent.putExtra("Age",v.getGender());
+        intent.putExtra("Religion",v.getGender());
+        intent.putExtra("Varna",v.getGender());
+        intent.putExtra("Qualification",v.getGender());
+        intent.putExtra("Ritwik Name",v.getGender());
         startActivity(intent);
 
     }

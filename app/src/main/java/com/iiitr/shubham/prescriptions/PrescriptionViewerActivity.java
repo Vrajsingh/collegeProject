@@ -11,10 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 public class PrescriptionViewerActivity extends AppCompatActivity {
 
 
-    private TextView ageTV,nameTV,genderTV,diagnosisTV,adviceTV,symptomsTV;
+    private TextView nameTV,fcnTV,perAddTV,preAddTV,pinTV,mobTV,ageTV,religionTV,varnaTV,qualTV,ritNameTV;
     private LinearLayout linearLayout;
 
-    private String name,age,gender,diagnosis,advice,symptoms;
+    private String Name,Family Code Number,Permanent Address,Present Address,Pin code,Mobile No,Age,Religion,Varna,Qualification,Ritwik Name;
     private ArrayList<String> prescriptions;
 
     @Override
@@ -22,30 +22,46 @@ public class PrescriptionViewerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prescription_viewer);
 
-        ageTV = findViewById(R.id.tv_age);
         nameTV = findViewById(R.id.tv_name);
-        genderTV = findViewById(R.id.tv_gender);
-        diagnosisTV = findViewById(R.id.tv_diagnosis);
-        adviceTV = findViewById(R.id.tv_advice);
-        symptomsTV = findViewById(R.id.tv_symptoms);
-
+        fcnTV = findViewById(R.id.tv_fcn);
+        perAddTV = findViewById(R.id.tv_perAdd);
+        preAddTV = findViewById(R.id.tv_preAdd);
+        pinTV = findViewById(R.id.tv_pin);
+        mobTV = findViewById(R.id.tv_mob);
+        ageTV = findViewById(R.id.tv_age);
+        religionTV = findViewById(R.id.tv_religion);
+        varnaTV = findViewById(R.id.tv_varna);
+        qualTV = findViewById(R.id.tv_qual);
+        ritNameTV = findViewById(R.id.tv_ritName);
+        
+        
         linearLayout = findViewById(R.id.prescriptions_ll);
 
-        name = getIntent().getStringExtra("name");
-        gender = getIntent().getStringExtra("gender");
-        age = getIntent().getStringExtra("age");
-        diagnosis = getIntent().getStringExtra("diagnosis");
-        advice = getIntent().getStringExtra("advice");
-        symptoms = getIntent().getStringExtra("symptoms");
+        Name = getIntent().getStringExtra("Name"); //name
+        Family Code Number = getIntent().getStringExtra("Family Code Number"); //gender
+        Permanent Address = getIntent().getStringExtra("Permanent Address"); //age
+        Present Address = getIntent().getStringExtra("Present Address"); //diagnosis
+        Pin code = getIntent().getStringExtra("Pin code"); //advice
+        Mobile No = getIntent().getStringExtra("Mobile No"); //symptoms
+        Age = getIntent().getStringExtra("Age");
+        Religion = getIntent().getStringExtra("Religion");
+        Varna = getIntent().getStringExtra("Varna");
+        Qualification = getIntent().getStringExtra("Qualification");
+        Ritwik Name = getIntent().getStringExtra("Ritwik Name");
 
         prescriptions = getIntent().getStringArrayListExtra("prescriptions");
 
-        nameTV.setText(name);
-        ageTV.setText(age);
-        genderTV.setText(gender);
-        adviceTV.setText(advice);
-        diagnosisTV.setText(diagnosis);
-        symptomsTV.setText(symptoms);
+        nameTV.setText(Name);
+        fcnTV.setText(Family Code Number);
+        perAddTV.setText(Permanent Address);
+        preAddTV.setText(Present Address);
+        pinTV.setText(Pin code);
+        mobTV.setText(Mobile No);
+        ageTV.setText(Age);
+        religionTV.setText(Religion);
+        varnaTV.setText(Varna);
+        qualTV.setText(Qualification);
+        ritNameTV.setText(Ritwik Name);
 
         for(int i=0;i<prescriptions.size();i++)
         {
